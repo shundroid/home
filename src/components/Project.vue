@@ -1,6 +1,7 @@
 <template>
   <article :style="style">
-    <slot name="thumbnail" />
+    <img src="../assets/no-image.png" v-if="noImage" />
+    <slot name="thumbnail" v-else />
     <h3><a :href="link" target="_blank">{{ title }}</a></h3>
     <slot />
   </article>
@@ -12,7 +13,8 @@ export default {
     title: String,
     background: String,
     color: String,
-    link: String
+    link: String,
+    noImage: { type: Boolean, default: false }
   },
   computed: {
     src() {
