@@ -34,9 +34,12 @@ article {
   height: 400px;
   padding: 30px;
   box-sizing: border-box;
+  margin: 5px;
 }
 a {
   color: inherit;
+}
+h3 a {
   text-decoration: none;
 }
 img {
