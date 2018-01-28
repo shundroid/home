@@ -1,6 +1,0 @@
-{
-  "projects": [
-    { "name": "asterisks", "background": "#333", "color": "#cfe3cb", "slug": "asterisks", "url": "https://asterisks.netlify.com/", "description": "My blog for everything" },
-    { "name": "animium.js", "background": "#FF9800", "color": "#fff", "slug": "animium", "url": "https://dengaku.club/workshops/archives/20170826-cganimation/", "description": ""}
-  ]
-}

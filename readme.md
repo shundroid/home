@@ -1,5 +1,3 @@
-# Home
+# home
 
-My home
-
-Implemented by [Web Components](https://www.webcomponents.org/introduction)
+My home implemented by vue components.
