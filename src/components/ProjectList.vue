@@ -12,10 +12,10 @@
         We held <a href="https://dengaku.club/workshops/archives/20170826-cganimation/">a workshop</a> explaining how animation works.<br />
         We used this in the workshop.
       </Project>
-      <Project no-image="true" title="hexo-search-result" background="#0f83cd" color="#fff" link="https://github.com/shundroid/hexo-search-result">
+      <Project :no-image="true" title="hexo-search-result" background="#0f83cd" color="#fff" link="https://github.com/shundroid/hexo-search-result">
         You can make a search result page for <a href="https://github.com/PaicHyperionDev/hexo-generator-search">hexo-generator-search</a> by using this.
       </Project>
-      <Project no-image="true" title="sphero-editor" background="#009688" color="#fff" link="https://github.com/comozilla/sphero-editor">
+      <Project :no-image="true" title="sphero-editor" background="#009688" color="#fff" link="https://github.com/comozilla/sphero-editor">
         Developed with <a href="http://comozilla.org/">Comozilla Lab</a>.<br />
         We held a workshop about <a href="https://www.sphero.com/">sphero</a> bowl.<br />
         This was used in the workshop to program sphero by javascript.
