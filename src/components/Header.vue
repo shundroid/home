@@ -1,6 +1,7 @@
 <template>
   <header>
     <h1>Shundroid</h1>
+    <h2>Motivation Tracker</h2>
     <div ref="chart" />
   </header>
 </template>
@@ -9,6 +10,7 @@
 import Tauchart, { Chart } from 'taucharts'
 import 'taucharts/build/production/tauCharts.default.min.css'
 import 'taucharts/build/development/plugins/tauCharts.tooltip.js'
+import 'taucharts/build/development/plugins/tauCharts.tooltip.css'
 
 function sendRequest() {
   return new Promise(resolve => {
@@ -39,10 +41,8 @@ export default {
   },
   methods: {
     drawChart(data) {
-      // eslint-disable-next-line no-console
-      console.log(Tauchart.api.plugins.get('tooltip')())
       const chart = new Chart({
-        type: 'line',
+        type: 'stacked-area',
         x: 'date',
         y: 'count',
         color: 'title',
