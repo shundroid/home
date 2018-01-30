@@ -1,67 +1,50 @@
 <template>
   <header>
-    <h1>Shundroid</h1>
-    <h2>Motivation Tracker</h2>
-    <div ref="chart" />
+    <section class="title-container">
+      <h1>Shundroid</h1>
+      <h2>
+        A junior high school student,<br />
+        A web programmer
+      </h2>
+    </section>
+    <Motiv />
   </header>
 </template>
 
 <script>
-import Tauchart, { Chart } from 'taucharts'
-import 'taucharts/build/production/tauCharts.default.min.css'
-import 'taucharts/build/development/plugins/tauCharts.tooltip.js'
-import 'taucharts/build/development/plugins/tauCharts.tooltip.css'
+import Motiv from './Motiv.vue'
 
-function sendRequest() {
-  return new Promise(resolve => {
-    const xhr = new XMLHttpRequest()
-    xhr.open('GET', 'https://script.google.com/macros/s/AKfycbz0ZAT-X7UctEiwTEsnTqRwqBOnjeX6SRA3Ob0tI-XBamx89Ms/exec')
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState === 4 && (xhr.status === 200 || xhr.status === 304)) {
-        resolve(xhr.response)
-      }
-    }
-    xhr.responseType = 'json'
-    xhr.send(null)
-  })
-}
-function processData(data) {
-  const newData = []
-  for (let datum of data) {
-    newData.push({ title: 'keydowns', date: datum.date, count: datum.keydowns })
-    newData.push({ title: 'clicks', date: datum.date, count: datum.clicks })
-  }
-  return newData
-}
 export default {
-  mounted() {
-    sendRequest().then(data => {
-      this.drawChart(processData(data))
-    })
-  },
-  methods: {
-    drawChart(data) {
-      const chart = new Chart({
-        type: 'stacked-area',
-        x: 'date',
-        y: 'count',
-        color: 'title',
-        data,
-        plugins: [
-          Tauchart.api.plugins.get('tooltip')()
-        ]
-      })
-      chart.renderTo(this.$refs.chart)
-    }
+  components: {
+    Motiv
   }
 }
 </script>
 
 <style scoped>
 header {
-  text-align: center;
+  text-align: left;
+  height: 100vh;
+  background-color: #212121;
+  color: #f5f5f5;
 }
-h1 {
-  margin: 100px 0;
+.title-container {
+  padding: 0 100px;
+  box-sizing: border-box;
+  height: calc(100% - 300px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.title-container h1 {
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  font-size: 5vh;
+}
+.title-container h2 {
+  font-family: 'Electrolize', serif;
+  margin-left: 20px;
+  font-size: 3vh;
 }
 </style>
