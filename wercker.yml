@@ -1,0 +1,33 @@
+box: node
+build:
+  steps:
+    - npm-install
+    - script:
+        name: echo nodejs information
+        code: |
+          echo "node version $(node -v) running"
+          echo "npm version $(npm -v) running"
+
+deploy:
+  steps:
+    - script:
+        name: configure git
+        code: |-
+          git config --global user.email shundroidk@gmail.com
+          git config --global user.name shundroid
+    - script:
+        name: build the website
+        code: |-
+          npm run build
+    - script:
+        name: change .gitignore
+        code: |-
+          rm .gitignore
+          mv production.gitignore .gitignore
+    - script:
+        name: deploy to github
+        code: |-
+          git add .
+          git commit -m "deploy"
+          git push -f origin :production
+
