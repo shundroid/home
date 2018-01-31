@@ -18,7 +18,8 @@ deploy:
     - script:
         name: build the website
         code: |-
-          npm run build
+          npm run build 2>&1
+          ls
     - script:
         name: change .gitignore
         code: |-
@@ -27,7 +28,12 @@ deploy:
     - script:
         name: deploy to github
         code: |-
+          rm -rf .git
+          git init
+          git checkout -b production
           git add .
           git commit -m "deploy"
-          git push -f origin :production
+          git remote add prod $remote
+          git remote -v
+          git push -f prod production
 
