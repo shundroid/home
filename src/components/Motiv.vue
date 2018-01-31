@@ -4,11 +4,9 @@
     .details
       | Today I had
       .num.keydowns {{ keydowns }}
-      | keydowns
-      |and
+      | keydowns and
       .num.clicks {{ clicks }}
-      | clicks
-      | by me.
+      | clicks by me.
 </template>
 
 <script>
