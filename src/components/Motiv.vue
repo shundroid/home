@@ -1,7 +1,13 @@
 <template>
   <section>
-    <h2>Motivation Tracker</h2>
-    <div ref="chart" />
+    <div class="chart" ref="chart" />
+    <div class="details">
+      Today I had<br />
+      <span class="num keydowns">{{ keydowns }}</span> keydowns<br >
+      and<br />
+      <span class="num clicks">{{ clicks }}</span> clicks<br />
+      by me.
+    </div>
   </section>
 </template>
 
@@ -34,24 +40,47 @@ function processData(data) {
 }
 
 export default {
+  data() {
+    return {
+      motiv: null
+    }
+  },
   mounted() {
     sendRequest().then(data => {
-      this.drawChart(processData(data))
+      this.motiv = data;
     })
   },
-  methods: {
-    drawChart(data) {
+  watch: {
+    motiv() {
+      if (!this.motiv) return
       const chart = new Chart({
-        type: 'stacked-area',
+        type: 'line',
         x: 'date',
         y: 'count',
         color: 'title',
-        data,
+        data: processData(this.motiv),
         plugins: [
           Tauchart.api.plugins.get('tooltip')()
-        ]
+        ],
+        guide: {
+          color: {
+            brewer: {
+              keydowns: '#E91E63',
+              clicks: '#00C853'
+            }
+          }
+        }
       })
       chart.renderTo(this.$refs.chart)
+    }
+  },
+  computed: {
+    keydowns() {
+      // eslint-disable-next-line no-console
+      return this.motiv ? this.motiv[this.motiv.length - 1].keydowns : '----'
+    },
+    clicks() {
+      return this.motiv ? this.motiv[this.motiv.length - 1].clicks : '---'
     }
   }
 }
@@ -59,13 +88,26 @@ export default {
 
 <style scoped>
 section {
-  height: 300px;
-}
-h2 {
-  margin: 0 0 0 30px;
-  height: 100px;
-}
-div {
   height: 200px;
+  display: flex;
+}
+.chart {
+  height: 100%;
+  flex: 1;
+}
+.details {
+  font-family: 'Electrolize', serif;
+  text-align: center;
+  margin: 0 60px;
+  font-size: 1.3em;
+}
+.num {
+  font-size: 1.5em;
+}
+.keydowns {
+  color: #E91E63;
+}
+.clicks {
+  color: #00C853;
 }
 </style>

@@ -31,7 +31,7 @@ header {
 .title-container {
   padding: 0 100px;
   box-sizing: border-box;
-  height: calc(100% - 300px);
+  height: calc(100% - 200px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,5 +46,6 @@ header {
   font-family: 'Electrolize', serif;
   margin-left: 20px;
   font-size: 3vh;
+  font-weight: normal;
 }
 </style>
