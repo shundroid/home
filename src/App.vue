@@ -1,8 +1,7 @@
-<template>
-  <div id="app">
-    <Header />
-    <ProjectList />
-  </div>
+<template lang="pug">
+  #app
+    Header
+    ProjectList
 </template>
 
 <script>

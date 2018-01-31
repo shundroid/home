@@ -1,10 +1,10 @@
-<template>
-  <article :style="style">
-    <img src="../assets/no-image.png" v-if="noImage" />
-    <slot name="thumbnail" v-else />
-    <h3><a :href="link" target="_blank">{{ title }}</a></h3>
-    <slot />
-  </article>
+<template lang="pug">
+  article(:style="style")
+    img(src="../assets/no-image.png" v-if="noImage")
+    slot(name="thumbnail" v-else)
+    h3
+      a(:href="link" target="_blank") {{ title }}
+    slot
 </template>
 
 <script>

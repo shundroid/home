@@ -1,14 +1,12 @@
-<template>
-  <header>
-    <section class="title-container">
-      <h1>Shundroid</h1>
-      <h2>
-        A junior high school student,<br />
-        A web programmer
-      </h2>
-    </section>
-    <Motiv />
-  </header>
+<template lang="pug">
+  header
+    section.title-container
+      h1 Shundroid
+      h2
+        | A junior high school student,
+        br
+        | A web programmer
+    Motiv
 </template>
 
 <script>

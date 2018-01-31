@@ -1,14 +1,14 @@
-<template>
-  <section>
-    <div class="chart" ref="chart" />
-    <div class="details">
-      Today I had<br />
-      <span class="num keydowns">{{ keydowns }}</span> keydowns<br >
-      and<br />
-      <span class="num clicks">{{ clicks }}</span> clicks<br />
-      by me.
-    </div>
-  </section>
+<template lang="pug">
+  section
+    .chart(ref="chart")
+    .details
+      | Today I had
+      .num.keydowns {{ keydowns }}
+      | keydowns
+      |and
+      .num.clicks {{ clicks }}
+      | clicks
+      | by me.
 </template>
 
 <script>
