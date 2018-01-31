@@ -41,6 +41,11 @@ export default {
 <style scoped>
 main {
   text-align: center;
+  font-family: 'Electrolize', arial;
+}
+h2 {
+  font-size: 2em;
+  margin: 50px 0;
 }
 section {
   display: flex;
