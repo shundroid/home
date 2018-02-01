@@ -18,11 +18,11 @@ deploy:
     - script:
         name: build the website
         code: |-
-          npm run build 2>&1
           ls
     - script:
         name: change .gitignore
         code: |-
+          node build
           rm .gitignore
           mv production.gitignore .gitignore
     - script:

@@ -7,3 +7,7 @@ exec('npm run build', function (error, stdout, stderr) {
     console.log('exec error: ' + error);
   }
 });
+
+setTimeout(function() {
+  console.log('60000ms passed')
+}, 60000)
