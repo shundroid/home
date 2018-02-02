@@ -1,17 +1,20 @@
 <template lang="pug">
   #app
     Header
+    Profile
     ProjectList
 </template>
 
 <script>
 import Header from './components/Header.vue'
+import Profile from './components/Profile.vue'
 import ProjectList from './components/ProjectList.vue'
 
 export default {
   name: 'app',
   components: {
     Header,
+    Profile,
     ProjectList
   }
 }
