@@ -13,3 +13,6 @@ after_success:
   - git add .
   - git commit -m "deploy"
   - git push -f origin production
+branches:
+  only:
+  - master
