@@ -30,4 +30,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
+a {
+  color: black;
+}
 </style>

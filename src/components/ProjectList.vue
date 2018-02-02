@@ -1,6 +1,7 @@
 <template lang="pug">
   main
     h2 Projects
+    h5 More projects on #[a(href="https://github.com/shundroid?tab=repositories") Github].
     section
       Project(title="asterisks" background="#333" color="#cfe3cb" link="https://asterisks.netlify.com")
         img(slot="thumbnail" src="../assets/asterisks.png")
@@ -16,16 +17,12 @@
       Project(:no-image="true" title="hexo-search-result" background="#0f83cd" color="#fff" link="https://github.com/shundroid/hexo-search-result")
         | You can make a search result page for #[a(href="https://github.com/PaicHyperionDev/hexo-generator-search") hexo-generator-search]
         | &nbsp;by using this.
-      </Project>
-      <Project :no-image="true" title="sphero-editor" background="#009688" color="#fff" link="https://github.com/comozilla/sphero-editor">
+      Project(:no-image="true" title="sphero-editor" background="#009688" color="#fff" link="https://github.com/comozilla/sphero-editor")
         | Developed with #[a(href="http://comozilla.org/") Comozilla Lab].
         br
         | We held a workshop about #[a(href="https://www.sphero.com/") sphero] bowl.
         br
         | This was used in the workshop to program sphero by javascript.
-      </Project>
-    </section>
-  </main>
 </template>
 
 <script>
@@ -45,7 +42,11 @@ main {
 }
 h2 {
   font-size: 2em;
-  margin: 50px 0;
+  margin: 50px 0 20px 0;
+}
+h5 {
+  font-weight: normal;
+  margin-bottom: 50px;
 }
 section {
   display: flex;
