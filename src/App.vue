@@ -30,8 +30,4 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
 }
-.graphical-report__tooltip {
-  user-select: none;
-  pointer-events: none;
-}
 </style>
