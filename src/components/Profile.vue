@@ -28,8 +28,11 @@ section {
 }
 .description {
   text-align: left;
-  margin-left: 10px;
+  margin-left: 50px;
   line-height: 2em;
+}
+img {
+  margin-left: 100px;
 }
 .small {
   font-size: 0.1em;
