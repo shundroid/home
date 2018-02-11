@@ -2,7 +2,7 @@
   main
     h2 Profile
     section
-      img(src="https://farm5.staticflickr.com/4685/24557689617_9b8ac248cc_m_d.jpg")
+      img(src="https://farm5.staticflickr.com/4667/39297562435_28c17bcf44_o_d.png")
       .description
         | I was born on 15th October 2002. #[br]
         | I’m a junior high school student in Tokyo.#[br]
