@@ -1,19 +1,20 @@
 <template lang="pug">
-  section
-    .chart(ref="chart")
-    .details
-      | Today I had
-      .num.keydowns {{ keydowns }}
-      | keydowns and
-      .num.clicks {{ clicks }}
-      | clicks by me.
+section
+  .chart(ref="chart")
+  .details
+    | Today I had
+    .num.keydowns {{ keydowns }}
+    | keypresses and
+    .num.clicks {{ clicks }}
+    | clicks.
 </template>
 
 <script>
 import Tauchart, { Chart } from 'taucharts'
-import 'taucharts/build/production/tauCharts.default.min.css'
-import 'taucharts/build/development/plugins/tauCharts.tooltip.js'
-import 'taucharts/build/development/plugins/tauCharts.tooltip.css'
+import 'taucharts/dist/taucharts.min.js'
+import 'taucharts/dist/taucharts.min.css'
+import 'taucharts/dist/plugins/tooltip.js'
+import 'taucharts/dist/plugins/tooltip.css'
 
 function sendRequest() {
   return new Promise(resolve => {
@@ -88,6 +89,7 @@ export default {
 section {
   height: 200px;
   display: flex;
+  justify-content: flex-end;
 }
 .chart {
   height: 100%;

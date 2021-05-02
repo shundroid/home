@@ -1,10 +1,9 @@
 <template lang="pug">
-  article(:style="style")
-    img(src="../assets/no-image.png" v-if="noImage")
-    slot(name="thumbnail" v-else)
-    h3
-      a(:href="link" target="_blank") {{ title }}
-    slot
+article(:style="style")
+  img(:src="thumbnail")
+  h3
+    a(:href="link" target="_blank") {{ title }}
+  slot
 </template>
 
 <script>
@@ -14,12 +13,9 @@ export default {
     background: String,
     color: String,
     link: String,
-    noImage: { type: Boolean, default: false }
+    thumbnail: { type: String, default: '/src/assets/no-image.png' }
   },
   computed: {
-    src() {
-      return `./assets/${this.slug}.png`
-    },
     style() {
       return {
         color: this.color,

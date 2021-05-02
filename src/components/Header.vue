@@ -1,12 +1,12 @@
 <template lang="pug">
-  header
-    section.title-container
-      h1 Shundroid
-      h2
-        | A junior high school student,
-        br
-        | A web programmer
-    Motiv
+header
+  section.title-container
+    h1 Shundroid
+    h2
+      | A junior high school student,
+      br
+      | A web programmer
+  Motiv
 </template>
 
 <script>

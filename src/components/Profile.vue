@@ -1,16 +1,16 @@
 <template lang="pug">
-  main
-    h2 Profile
-    section
-      img(src="https://farm5.staticflickr.com/4667/39297562435_28c17bcf44_o_d.png")
-      .description
-        | I was born on 15th October 2002. #[br]
-        | I’m a junior high school student in Tokyo.#[br]
-        | I love computer / robotics programming, #[br]
-        | so I’ve joined various events to learn technologies since I was ten.#[br]
-        | Recently, to help Web technologies spread#[br]
-        | I held the workshops for elementary school students and developed applications.#[br]
-        .small In fact, I have perfect pitch but I cannot read musical scores.
+main
+  h2 Profile
+  section
+    img(src="https://farm5.staticflickr.com/4667/39297562435_28c17bcf44_o_d.png")
+    .description
+      | I was born on 15th October 2002. #[br]
+      | I’m a junior high school student in Tokyo.#[br]
+      | I love computer / robotics programming, #[br]
+      | so I’ve joined various events to learn technologies since I was ten.#[br]
+      | Recently, to help Web technologies spread#[br]
+      | I held the workshops for elementary school students and developed applications.#[br]
+      .small In fact, I have perfect pitch but I cannot read musical scores.
 </template>
 
 <style scoped>
