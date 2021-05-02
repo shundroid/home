@@ -3,9 +3,9 @@ header
   section.title-container
     h1 Shundroid
     h2
-      | A junior high school student,
+      | A student,
       br
-      | A web programmer
+      | A programmer
   Motiv
 </template>
 
