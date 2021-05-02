@@ -9,7 +9,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "pug": "^2.0.0-rc.4",
+    "pug": "^3.0.1",
     "pug-loader": "^2.3.0",
     "taucharts": "^1.2.2",
     "vue": "^2.5.13"
