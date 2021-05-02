@@ -14,21 +14,13 @@ main
       | プログラミングは10年目です。 I have been programming for 10 years.
       h4 専門でやっている言語 / Languages I specialize in
       | JavaScript / TypeScript #[br]
-      | 実用のシステムの開発経験があります。コードレビューなども可能です。#[br]
+      | 実用システムのチーム開発経験があります。コードレビューなども可能です。#[br]
       | 主に子どもに技術を広めるワークショップに使うシステムを作ってきました。#[br]
-      | I have experienced Web development in practical situation. I can review codes. #[br]
+      | I have experienced collaborative Web development in practical situations. I can review codes. #[br]
       | Mainly I have developed systems for workshops which aim to spread technologies to children.
-      h5 よく使う・使ったもの / Libraries I use/used very often
-      | Vue.js, Knockout.js #[br]
-      | Node.js, Electron, Vite, Webpack, Browserify, Gulp, Grant #[br]
-      | Vuex, Vue-router, Hexo
-      h5 たまに使う・使ったもの / Libraries I have experienced
-      | React, Angular 2, #[br]
-      | Bower, Pug (Jade), ejs
-      h4 よく使う言語 / Languages I often use
-      | C# (both .NET and unity) / python
-      h4 触ったことがある言語 / Languages I have experienced
-      | Rust, Swift, Ruby, Visual Basic, Lua
+      h4 使える言語 / Languages I can use
+      | (Often use) C# (both .NET and unity) / python#[br]
+      | (Sometimes use) Rust, Swift, Ruby, Visual Basic, Lua
       h4 受賞歴・検定など / Achievements, qualifications, etc
       | 2017＜検定＞P検2級取得#[br]
       | 2013-2016＜ロボティクスプログラミング＞FLL Japan Open 4年連続出場#[br]
@@ -41,6 +33,8 @@ main
       | 2015＜Organization I have joined / I was in charge of system development＞Workshop Awards Grand Prize#[br]
       | 2014＜Contest＞Mashup Awards 11 Open Web Apps Prize#[br]
       | 2014＜Contest＞HTML Japan Cup 2014 Web Platform Prize
+      | #[br]
+      | More about me: #[a(href="https://asterisks.netlify.app/profile/") See my blog]
 </template>
 
 <style scoped>
