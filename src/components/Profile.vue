@@ -71,6 +71,7 @@ export default {
 main {
   text-align: center;
   font-family: 'Electrolize', arial;
+  padding: 20px;
 }
 h2 {
   font-size: 2em;

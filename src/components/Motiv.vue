@@ -29,7 +29,11 @@ function sendRequest() {
     xhr.send(null)
   })
 }
+const dataCount = 100
 function processData(data) {
+  if (data.length >= dataCount) {
+    data = data.slice(data.length - dataCount)
+  }
   const newData = []
   for (let datum of data) {
     newData.push({ title: 'keydowns', date: datum.date, count: datum.keydowns })
@@ -98,7 +102,7 @@ section {
 .details {
   font-family: 'Electrolize', serif;
   text-align: center;
-  margin: 0 60px;
+  margin: 0 5vw 0 5vw;
   font-size: 1.3em;
 }
 .num {
