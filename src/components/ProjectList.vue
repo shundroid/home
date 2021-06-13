@@ -1,8 +1,8 @@
 <template lang="pug">
 main
-  h2 Projects
+  h2#projects Projects
   h5 More projects on #[a(href="https://github.com/shundroid?tab=repositories") Github].
-  h3 Websites
+  h3#websites Websites
   | 私が開発したサイトです。 Websites I have developed.#[br]#[br]
   section
     Project(title="asterisks" background="#333" color="#cfe3cb" link="https://asterisks.netlify.app" thumbnail="https://lh3.googleusercontent.com/Wz17dGj9WLD-NnxEGuRwQ5kbCO3jqODN6sdoSDw6QJVwj7-DONw3Rene3qjf5fNRAvBtbO4i3u4a5J4hTA0LkJqQ-WDTC0tDwb6bdMl8rTptHbiNIx2Tc_5qF2g6MOg3eyFtrzOq-_EImL4yZoUO97pWDCgsRCQa1vEg_QCzXxJ3AihiIC3T-kUM2XwllXhzlmbq3-1DC2L_1idXSyP4s8HBWJlt7TCafckJuNim8NDZmeLAsJ9WAKGJQhWVGqMwnTDOgUnyFCwmDBnKKskChBRwkWAqsmBHNzzJCqCMOADjUha5WJsIytV9Gib_NCZT2iUHyXDlyU2XeGBN8IVRgfTW8wpPnAIASENkKaMBYTOLyK5Q16Vl_BKXqb8JbxE9VVhYMDCGcYdU8Qdjqf9skTKjBqYW4IbKvEVPfyh5HXAtHJl7cpyOUlJG6nWsBZidC0k-Fv0K-UHQ5gxyyJTT-GfFXiioQqtk79KqnhBm7ss5i4HTKnpW3ItOD755Ifpl1TlO19D9apFgBxuRfDuZiS8WsxbWyCyQzvhTmFGcOwhC9x_8HkOrPrCbLUB313gYLM4PioD7Fj6oY4MSjtYTtrUhEacq19ascLKuwxKBnrz3CSO5KWI2Ti0ufGtUL_dXiX2KDmea5djWQxXsvFtfWsMZPIRYUfuIGitb5ohNJJyxZ22flVrNGejlSUggejGG5K4dsAcnY6oexUdMG11ly2RR=s256-no?authuser=0")
@@ -19,7 +19,7 @@ main
     Project(title="ガロア理論ジェネレーター Galois-Gen" background="#2196f3" color="white" link="https://dotkai.netlify.app")
       | 高校の先生が出版した本の表紙を自由にデザインできるサイトです。#[br]
       | A website where we can design the front cover of the book our teacher published.
-  h3 Systems for school activities
+  h3#systems-for-school-activities Systems for school activities
   | 私が開発した学校活動向けのシステムです。 Systems I have developed.#[br]#[br]
   section
     Project(title="現社ディベートシステム Debate System" background="#F44336" color="white" link="https://drive.google.com/file/d/1kspJnUJ1ZT0JAOym4qft5Y9wBOBMbvck/view?usp=sharing" thumbnail="https://lh3.googleusercontent.com/pw/ACtC-3ccZnc9aCiWeCCBxrdMgt1_Y6rZ-KjgMuZgZ4gBM3kahI7plbzpwLGJhSzxw7vbrJYhBA-iVu_tyYAUtjGdukmA6x_TazZyhTKB4UelStmTQDvhcs6tYLtHSdJpsVMHtQRqueIlgtqccoYdrXyLi6jnVA=s955-no?authuser=0")
@@ -31,7 +31,7 @@ main
     Project(title="記念祭備品管理 Kinensai Tool-Management" background="#eee" color="black" thumbnail="https://lh3.googleusercontent.com/2Mzs3vpAuz8EcmJayyORAOunWiKGXPK-YAQ31xVOq-wqRdV3_b8URIUvp4i1uvxYVtDICySFO1QnOf2a61M0adXfwp1VufRa9C_hRAU5T8g1W706xlez-n2ZYIyYa_BInCs_geuVRlKMsroHuXjRpjhd2rUtPptfjgmBmLHBU6Rfmkw_vq2mKpQ9TOZ8h8-mNGaAEB0KUjw1mmZZIPQXJuuFpqM51ne-j_fkwHsIJ9RnbF_PRbzwPoSPV4P6a_AQv59uOTJJtl9MANU5j67hHj_2_EI3_EGck3Q5XmLPcTQXZP9bjLb3IwL4bFtSuL6IKxfHrQet_aSbah4aP6-3_jxG0aIeucpiE2P4FZ9vH2CvF1b0JlqmivDAj2kJlLDiTjL344dG6MuzXmAxmBiRA9oituHRPDDQZH_M3-ASb4Z-1gfVZNJGC3vHdco8gmn_7oKp43qcp5pEPmiFeA3AQloCgONCTFXC1g8AFEGjvSDQCYt3UlKcSfpYcO5sq9wODG_bF3nIa_OkEQHCW5hTtYFsTAnn_9Qkmeb4dRfmK2Dr3vtb5i-O7PCQnidtbT7GOVATUXYqtXzoTRGkImgJX_vzvq5Zs3y4nLglM0OT6PIGSofLXQBZDGiz_IWGN247MxhAgasjBoGSJMlmyws6aPq7W6FyHbI_YY6Di1CwWOoyCJ0Lul6Y7jQt5cGFdmxkHvS6T1O_2V78GEF2kwgnccr9=s105-no?authuser=0")
       | 文化祭で使う備品の貸出状況などを管理するシステムです。FirebaseのAuthとFirestoreを利用しています。#[br]
       | A system for managing tools used for school festivals developed with Firebase's Auth and Firestore.
-  h3 Systems for workshops
+  h3#systems-for-workshops Systems for workshops
   | 私が開発したワークショップ向けのシステムです。 Systems I have developed.#[br]#[br]
   section
     Project(title="animium.js" background="#FF9800" color="#fff" link="https://github.com/dengaku-club/animium.js" thumbnail="https://lh3.googleusercontent.com/0SN13-BoBtpYbpgdO2sv46izmN0TLM2jQCi8_NXwZtTkPJMFoZn84HwSxKzfTj_7QTNkjycmrdXATY3TDUOzFpaNLQbHIHll5dUoY_KohA5gINxKdNcdzmVNgqGD_nnKj2CEWFcU3DsBZ2u88_MqgACqJ_DJAs47yie7e2RL-PVlbCanPCdbmIjlPf2-w4fYvqMGu2qnizLPhoxSN8irjKXAzjOddLSQ6sASuiU7TT8wpO4CedMCN_cm5I-XDXOp2NDImYkp1okAtL5g8yMQWkyaI75YqyrvqKwyrVvVWGPBXKoCXpwvnci3wSBqtcEOIYCOMdDZfgm5emSUAr7MeR8q0drfd3ZjDikkPrS4Fqf51NFWsgn3LFnYb7dkVOltrEUAjfLo_vIXgcAsz15FICUu8tQAqiti7kyKeo0EIa3_twAC1KCTC2WPqU5KoCP5wTwIAyAksI-hoa_9FjQ0V11TzKcTTM8O8tyK2vrV8f6dyfNDtx7k2kwZChnWNaSC4JzKobvhmag149tyowBaVA4fXjC1CxKALtbiSdMDspJsl1vYy7iNV5Sf-ABTYrPwEDfQVElYEIRcCJPvFX4Qs-DUmRoFBCRqdACeO4PWk3JWxq5UrscI7S0vmHbYsa4HlUgbQAuly2fPaa-O0nIXrioPVsE63TtfA6RCQOEDgE9AH5Nv5qwUvJdV9bChsNHTJLOrdbtYh4KcRp1POQKju1fH=s256-no?authuser=0")
@@ -46,7 +46,7 @@ main
     Project(title="sphero-editor" background="#009688" color="#fff" link="https://github.com/comozilla/sphero-editor")
       | コモジラ研究所にて開発しました。Spheroというロボットでボーリングをする#[a(href="https://comozilla.tumblr.com/post/160548893090/sphero%E3%81%A7%E3%83%9C%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%AE%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%E3%82%92%E5%87%BA%E5%B1%95%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F") ワークショップ]でSpheroをプログラムするために使いました。
       | Developed in Comozilla Lab. We used this to program Sphero in a #[a(href="https://comozilla.tumblr.com/post/160548893090/sphero%E3%81%A7%E3%83%9C%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%81%AE%E3%83%AF%E3%83%BC%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%83%E3%83%97%E3%82%92%E5%87%BA%E5%B1%95%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F") workshop] in which we bowl by using Sphero balls.
-  h3 Hobbies
+  h3#hobbies Hobbies
   | 私が開発した色々なものです。 Something I have developed.#[br]#[br]
   section
     Project(title="Decolony (ref-viz)" background="#e0e0e0" color="#212121" link="https://suken.netlify.app/decolony/" thumbnail="https://lh3.googleusercontent.com/pw/ACtC-3cZ9OHaNiXKzUsPj_2Nz4CofGlaU24lJtOZ_VAVfW02V2tP3d1zIgLP1nwVCwBwi19CVrgEVYP9waSJG3vsFgEC62uEGJfOFUoIL4jkkMRH6L6sS1avqRqrAuxW7OkaLKoSG2h9_T0REhmZIYZSKY6b_Q=s380-no?authuser=0")
@@ -55,7 +55,7 @@ main
     Project(title="themusic" background="#e0e0e0" color="#212121" link="https://github.com/chikoski/themusic")
       | A music player for Firefox OS.
       | Developed with #[a(href="https://github.com/chikoski") chikoski] and a student who was during work visit.
-  h3 Libraries
+  h3#libraries Libraries
   | 私が開発したライブラリです。 Libraries I have developed.#[br]#[br]
   section
     Project(title="hexo-search-result" background="#0f83cd" color="#fff" link="https://github.com/shundroid/hexo-search-result")
@@ -70,7 +70,7 @@ main
     Project(title="virtual-sphero" background="#3F51B5" color="#fff" link="https://github.com/comozilla/virtual-sphero/tree/develop")
       | We can use this for simulating Sphero even when we don't have them.
       | It was very useful when we developed apps using Sphero.
-  h3 Games
+  h3#games Games
   | 私が開発したゲームです。 Games I have developed.#[br]#[br]
   section
     Project(title="公式をその場で作るゲーム" background="black" color="white" link="https://drive.google.com/file/d/1OHZfpPPFtNBTOKtijZXIAmvtAKoqatDy/view?usp=sharing" thumbnail="https://lh3.googleusercontent.com/pw/ACtC-3fq6uErg-XsW0nd8bvV5H2TAAGcRM0CWVJmzPsKFESpGZro4fCbM8MIuMvS-ZeDYvRWCw2Bkhc1NG6KzFFcxeKU6bAXk-MWvoLIFBHNUiCU6YQ4fikgGanLHsAdLoO1KuRVoZM6ycrQp3t_IVPB0fzJWQ=w392-h391-no?authuser=0")
